@@ -4,6 +4,8 @@
     "start": "expo start",
     "start:web": "expo start --web",
     "typecheck": "tsc --noEmit -p .",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx}\"",
     "eject": "expo eject"
   },
   "dependencies": {
@@ -19,7 +21,13 @@
     "@types/react": "~16.9.0",
     "@types/react-native": "~0.60.23",
     "babel-preset-expo": "~8.0.0",
+    "prettier": "^1.19.1",
     "typescript": "^3.7.5"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "always"
   },
   "private": true
 }
