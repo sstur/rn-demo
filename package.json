@@ -5,6 +5,8 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "typecheck": "tsc --noEmit -p .",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx}\"",
     "test": "jest"
   },
   "dependencies": {
@@ -21,11 +23,17 @@
     "babel-jest": "^25.1.0",
     "jest": "^25.1.0",
     "metro-react-native-babel-preset": "^0.58.0",
+    "prettier": "^1.19.1",
     "react-test-renderer": "16.9.0",
     "typescript": "^3.7.5"
   },
   "jest": {
     "preset": "react-native"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "arrowParens": "always"
   },
   "private": true
 }
